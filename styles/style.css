@@ -234,3 +234,86 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+header {
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+header h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 400%;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.homeHero {
+  background-image: url(../assets/header-home.jpg);
+}
+
+.blogHero {
+  background-image: url(../assets/blog-image.jpg);
+}
+
+.blogHero nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactHero {
+  background-image: url(../assets/contact-image.jpg);
+}
+
+.contactHero nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyright {
+  background-color: #151514;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 15px 0;
+}
+
+body {
+  background-color: yellow;
+}

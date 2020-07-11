@@ -1,2 +1,10 @@
 @import 'setup';
+@import 'global';
+@import 'mixins';
+@import 'typography';
+@import 'header';
+@import 'footer';
 
+body {
+  background-color: yellow;
+}

@@ -1,3 +1,29 @@
-body {
-  color: yellow;
+// WRAPPER
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
+
+// IMAGE
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+// VARIABLES
+
+$white: #F5F5F5;
+$black: #151514;
+$yellow: #F8FB05;
+$evergreen: #065635;
+$ice: #E0FDDF;
+
+$primary: 'Kumar One', cursive;
+$primaryOutline: 'Kumar One Outline', cursive;
+$secondary: 'Lato', sans-serif;
+
+
+

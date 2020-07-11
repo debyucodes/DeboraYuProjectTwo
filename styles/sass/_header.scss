@@ -1,0 +1,62 @@
+// NAV
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      padding: 0 30px;
+    }
+  }
+}
+
+// HEADER 
+
+header {
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  h1 {
+    font-family: $primaryOutline;
+    font-size: 400%;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}
+
+// HOME HERO SECTION 
+
+.homeHero {
+  background-image: url(../assets/header-home.jpg);
+}
+
+
+// BLOG HERO SECTION
+
+.blogHero {
+  background-image: url(../assets/blog-image.jpg);
+
+  nav {
+    justify-content: space-between;
+  }
+}
+
+
+
+// CONTACT HERO SECTION 
+
+.contactHero {
+  background-image: url(../assets/contact-image.jpg);
+  
+  nav {
+    justify-content: space-between;
+  }
+}
