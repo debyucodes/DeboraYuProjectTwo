@@ -1,10 +1,15 @@
+// GLOBAL GLOBAL
 @import 'setup';
 @import 'global';
 @import 'mixins';
 @import 'typography';
+
+
+// PAGE SPECIFICS
+@import 'home';
+@import 'blog';
+@import 'contact';
+
+// SECTION
 @import 'header';
 @import 'footer';
-
-body {
-  background-color: yellow;
-}

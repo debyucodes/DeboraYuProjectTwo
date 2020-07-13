@@ -9,6 +9,7 @@
   <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>
   <title>Blog</title>
 </head>
+
 <body>
   
   <header class="blogHero">
@@ -28,7 +29,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="blog">
     <section class="wrapper">
       <article>
         <img src="./assets/blog-post-image.jpg" alt="">
@@ -53,9 +54,7 @@
       </aside>
     </section>
 
-  </main>
-
-  <footer>
+  <section  class="commentSection">
     <div class="wrapper">
       <div class="comments">
         <h3>Comments</h3>
@@ -70,6 +69,13 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro atque distinctio quia error iste sint?</p>
         </div>
       </div>
+    </section>
+
+  </main>
+
+  
+
+  <footer class="blogFooter">
 
       <form action="">
         <label for="name">First Name</label>
@@ -80,7 +86,7 @@
 
         <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 
-        <button type="submit">
+        <button class="button" type="submit">
           post comment
         </button>
       </form>

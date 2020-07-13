@@ -3,6 +3,7 @@
 nav {
   display: flex;
   justify-content: flex-end;
+  padding-top: 15px;
 
   ul {
     display: flex;
@@ -10,7 +11,10 @@ nav {
 
     a {
       text-decoration: none;
-      padding: 0 30px;
+      padding: 0 20px;
+      font-family: $secondary;
+      color: $black;
+      font-weight: 600;
     }
   }
 }
@@ -19,9 +23,8 @@ nav {
 
 header {
   width: 100%;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100vh;
 
   h1 {
@@ -30,12 +33,27 @@ header {
     font-weight: 100;
     text-transform: uppercase;
   }
+
+  h2 {
+    font-family: $primary;
+    font-size: 120%;
+    width: 40px;
+  }
 }
 
 // HOME HERO SECTION 
 
 .homeHero {
   background-image: url(../assets/header-home.jpg);
+
+  h1 {
+    padding-left: 10%;
+    width: 40%;
+  }
+
+  img {
+    width: 55%;
+  }
 }
 
 
@@ -55,7 +73,8 @@ header {
 
 .contactHero {
   background-image: url(../assets/contact-image.jpg);
-  
+  background-color: $ice;
+
   nav {
     justify-content: space-between;
   }

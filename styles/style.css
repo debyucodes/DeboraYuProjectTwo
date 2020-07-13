@@ -237,7 +237,7 @@ html {
 
 .wrapper {
   max-width: 1200px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -247,6 +247,277 @@ img {
   display: block;
 }
 
+.button {
+  background-color: #065635;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #F5F5F5;
+  font-family: "Kumar One", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  text-transform: uppercase;
+  color: #151514;
+}
+
+.containerOne {
+  margin: 200px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containerOne .imageText {
+  width: 60%;
+}
+
+.containerOne img {
+  height: 300px;
+  width: 300px;
+  -webkit-box-shadow: -15px 15px 0 0 #F8FB05;
+          box-shadow: -15px 15px 0 0 #F8FB05;
+}
+
+.containerTwo {
+  background-color: #E0FDDF;
+  padding: 70px 0;
+}
+
+.containerTwo .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerTwo .wrapper img:first-child,
+.containerTwo .wrapper img:nth-child(2) {
+  margin-right: 30px;
+}
+
+.containerThree,
+.containerFour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containerThreeLeft,
+.containerThreeRight,
+.containerFourLeft,
+.containerFourRight {
+  width: 50%;
+  padding-left: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerThree i,
+.containerFour i {
+  font-size: 30px;
+  background-color: #F8FB05;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  margin: 20px 20px 0 0;
+}
+
+.containerThree {
+  padding-top: 20px;
+}
+
+.containerFour {
+  padding-bottom: 40px;
+}
+
+.sectionFive {
+  background-color: #E0FDDF;
+}
+
+.containerFive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+
+.containerFiveLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 100px;
+}
+
+.containerFiveLeft img {
+  -webkit-box-shadow: 15px 15px 0 0 #F8FB05;
+          box-shadow: 15px 15px 0 0 #F8FB05;
+  position: relative;
+  bottom: 70px;
+}
+
+.containerFiveLeft .imageText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.containerFiveLeft .imageText p {
+  text-align: right;
+  width: 60%;
+}
+
+.containerFiveRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 100px;
+}
+
+.containerFiveRight img {
+  -webkit-box-shadow: -15px 15px 0 0 #F8FB05;
+          box-shadow: -15px 15px 0 0 #F8FB05;
+  position: relative;
+  top: 150px;
+}
+
+.containerFiveRight p {
+  width: 60%;
+}
+
+.homeFooter {
+  text-align: center;
+}
+
+.homeFooter .footerText {
+  margin: 100px 0;
+}
+
+.homeFooter .footerText p {
+  padding: 0 150px;
+}
+
+.blog,
+.blogFooter {
+  background-color: #E0FDDF;
+}
+
+.contactFooter {
+  background: #E0FDDF;
+}
+
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footerContainer form {
+  width: 60%;
+  text-align: center;
+  padding: 50px;
+  max-width: 820px;
+  -webkit-box-shadow: 15px 15px 0 0 #F8FB05;
+          box-shadow: 15px 15px 0 0 #F8FB05;
+  position: relative;
+  bottom: 250px;
+  background: #F5F5F5;
+}
+
+.footerContainer form .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footerContainer form input {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.footerContainer form textarea {
+  width: 100%;
+  height: auto;
+  margin: 20px 10px;
+}
+
+.footerContainer form ::-webkit-input-placeholder {
+  text-transform: uppercase;
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.footerContainer form :-ms-input-placeholder {
+  text-transform: uppercase;
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.footerContainer form ::-ms-input-placeholder {
+  text-transform: uppercase;
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.footerContainer form ::placeholder {
+  text-transform: uppercase;
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.footerContainer form .button {
+  width: 100%;
+}
+
+.info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.info ul a {
+  text-decoration: none;
+  padding-right: 20px;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,6 +525,7 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 15px;
 }
 
 nav ul {
@@ -265,14 +537,16 @@ nav ul {
 
 nav ul a {
   text-decoration: none;
-  padding: 0 30px;
+  padding: 0 20px;
+  font-family: "Lato", sans-serif;
+  color: #151514;
+  font-weight: 600;
 }
 
 header {
   width: 100%;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100vh;
 }
 
@@ -283,8 +557,23 @@ header h1 {
   text-transform: uppercase;
 }
 
+header h2 {
+  font-family: "Kumar One", cursive;
+  font-size: 120%;
+  width: 40px;
+}
+
 .homeHero {
   background-image: url(../assets/header-home.jpg);
+}
+
+.homeHero h1 {
+  padding-left: 10%;
+  width: 40%;
+}
+
+.homeHero img {
+  width: 55%;
 }
 
 .blogHero {
@@ -299,6 +588,7 @@ header h1 {
 
 .contactHero {
   background-image: url(../assets/contact-image.jpg);
+  background-color: #E0FDDF;
 }
 
 .contactHero nav {
@@ -312,8 +602,4 @@ header h1 {
   color: #F5F5F5;
   text-align: center;
   padding: 15px 0;
-}
-
-body {
-  background-color: yellow;
 }

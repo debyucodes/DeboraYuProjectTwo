@@ -1,18 +1,3 @@
-// WRAPPER
-
-.wrapper {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-// IMAGE
-img {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-}
-
 // VARIABLES
 
 $white: #F5F5F5;
@@ -25,5 +10,27 @@ $primary: 'Kumar One', cursive;
 $primaryOutline: 'Kumar One Outline', cursive;
 $secondary: 'Lato', sans-serif;
 
+// WRAPPER
 
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+// IMAGE
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+// BUTTON
+.button {
+  background-color: $evergreen;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: $white;
+  font-family: $primary;
+}
 
