@@ -426,8 +426,131 @@ a {
 }
 
 .blog,
+.blogHero,
 .blogFooter {
   background-color: #E0FDDF;
+}
+
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogContainer article {
+  background-color: #F5F5F5;
+  width: 60%;
+  -webkit-box-shadow: 15px 15px 0 0 #F8FB05;
+          box-shadow: 15px 15px 0 0 #F8FB05;
+  margin-top: -350px;
+}
+
+.blogContainer article h2,
+.blogContainer article h4,
+.blogContainer article p {
+  padding: 10px 80px 10px 160px;
+}
+
+.blogContainer article img {
+  -webkit-box-shadow: 15px 15px 0 0 #F8FB05;
+          box-shadow: 15px 15px 0 0 #F8FB05;
+}
+
+.blogContainer aside {
+  width: 20%;
+  background-color: #F8FB05;
+  margin-top: -100px;
+  padding: 10px;
+  height: 90vh;
+}
+
+.blogContainer aside img {
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+}
+
+.commentSection {
+  width: 60%;
+  padding: 50px 0 0 160px;
+}
+
+.commentSection img {
+  width: 100px;
+  height: 100px;
+}
+
+.blogFooter {
+  padding-left: 150px;
+}
+
+.blogFooter form {
+  width: 60%;
+  text-align: center;
+  padding-bottom: 100px;
+  max-width: 820px;
+  background: #E0FDDF;
+}
+
+.blogFooter form .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogFooter form input {
+  width: 45%;
+  margin: 20px 10px;
+  padding: 50px 0px 20px 10px;
+  background: #E0FDDF;
+  border: none;
+  border-bottom: 2px solid #065635;
+}
+
+.blogFooter form textarea {
+  width: 100%;
+  height: auto;
+  background: #E0FDDF;
+  border: 2px solid #065635;
+  padding: 20px;
+}
+
+.blogFooter form ::-webkit-input-placeholder {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.blogFooter form :-ms-input-placeholder {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.blogFooter form ::-ms-input-placeholder {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.blogFooter form ::placeholder {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.blogFooter form .button {
+  width: 100%;
 }
 
 .contactFooter {
@@ -450,8 +573,8 @@ a {
   max-width: 820px;
   -webkit-box-shadow: 15px 15px 0 0 #F8FB05;
           box-shadow: 15px 15px 0 0 #F8FB05;
-  position: relative;
-  bottom: 250px;
+  margin-top: -300px;
+  margin-bottom: 100px;
   background: #F5F5F5;
 }
 
