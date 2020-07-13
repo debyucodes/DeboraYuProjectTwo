@@ -478,6 +478,13 @@ a {
   padding: 50px 0 0 160px;
 }
 
+.commentSection .commentOne,
+.commentSection .commentTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .commentSection img {
   width: 100px;
   height: 100px;
@@ -504,9 +511,13 @@ a {
           justify-content: space-between;
 }
 
+.blogFooter form .formInput {
+  width: 47%;
+  margin-bottom: 40px;
+}
+
 .blogFooter form input {
-  width: 45%;
-  margin: 20px 10px;
+  width: 100%;
   padding: 50px 0px 20px 10px;
   background: #E0FDDF;
   border: none;
@@ -551,6 +562,7 @@ a {
 
 .blogFooter form .button {
   width: 100%;
+  text-transform: uppercase;
 }
 
 .contactFooter {
