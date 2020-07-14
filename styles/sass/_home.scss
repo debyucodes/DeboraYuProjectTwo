@@ -2,13 +2,14 @@
 .homeHero ul li:first-child {
   text-decoration: $yellow underline;
   text-decoration-thickness: 3px;
-}
+} 
 
 // DISCOVER SECTION
 .discover {
   margin: 200px 0;
   display: flex;
   justify-content: space-between;
+  // flex-wrap: wrap;
 
   .imageText {
     width: 60%;
@@ -140,3 +141,32 @@
   
 }
 
+
+// RESPONSIVE
+
+@media (max-width: 937px) {
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  .discover {
+    margin: 50px 0
+  }
+
+  .gallery .wrapper{
+    flex-wrap: wrap
+  }
+
+  img {
+    margin: 20px;
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 380px) {
+  body {
+    background: green;
+  }
+}

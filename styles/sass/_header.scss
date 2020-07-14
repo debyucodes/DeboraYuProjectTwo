@@ -22,8 +22,11 @@ nav {
       color: $black;
       font-weight: 600;
     }
-
   }
+}
+
+.burger {
+  visibility: hidden;
 }
 
 // HEADER 
@@ -85,4 +88,26 @@ header {
   nav {
     justify-content: space-between;
   }
+}
+
+// ------------
+// RESPONSIVE
+// ------------
+
+// MOBILE
+
+@media (max-width: 800px) {
+
+  .burger {
+    visibility: visible;
+    float: right;
+    font-size: 30px;
+    margin-top: - 50px
+  }
+
+  nav {
+    visibility: hidden
+  }
+
+
 }

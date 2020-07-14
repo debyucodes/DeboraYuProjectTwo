@@ -64,8 +64,6 @@
   }
 }
 
-
-
 .info {
   margin-top: -120px;
 
@@ -87,4 +85,34 @@
     line-height: 10px;
   }
 
+}
+
+// ------------
+// RESPONSIVE
+// ------------
+
+// TABLET
+@media (max-width: 1045px) {
+
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+
+    form {
+      width: 100%;
+      margin: -250px 0 200px 0;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  .contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
 }
