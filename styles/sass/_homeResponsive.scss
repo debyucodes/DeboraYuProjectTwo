@@ -1,0 +1,95 @@
+// ------------
+// RESPONSIVE
+// ------------
+
+
+// FIRST BREAK POINT
+
+@media (max-width: 937px) {
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  .discover {
+    margin: 50px 0
+  }
+
+  .gallery .wrapper{
+    flex-wrap: wrap
+  }
+
+  img {
+    margin: 20px;
+    width: 90%;
+  }
+
+}
+
+// MOBILE
+
+@media (max-width: 380px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header img {
+    display: none
+  }
+
+  .discover {
+    flex-direction: column;
+
+    .imageText {
+      margin: -400px 0 50px 0;
+      width: 100%
+    }
+  }
+
+    .containerThree,
+    .containerFour {
+      flex-direction: column;
+      width: 100%
+    }
+
+    .containerThreeLeft,
+    .containerThreeRight,
+    .containerFourLeft,
+    .containerFourRight {
+      width: 100%;
+    }
+
+    .containerFive {
+      flex-direction: column;
+      padding: 0;
+
+      .containerFiveLeft,
+      .containerFiveRight {
+        margin: 0;
+      }
+
+    }
+
+  .containerFive .imageText {
+    align-items: center;
+
+      p {
+        text-align: center;
+        width: 100%;
+      }       
+    }
+
+    .containerFiveRight .button {
+      margin-left: 115px
+        }
+
+
+  .footerText {
+    margin: 0;
+}
+
+  .homeFooter .footerText p {
+    padding: 0
+  }
+
+}
