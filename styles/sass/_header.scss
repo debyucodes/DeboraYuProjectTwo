@@ -38,10 +38,7 @@ header {
   height: 100vh;
 
   h1 {
-    font-family: $primaryOutline;
-    font-size: 400%;
-    font-weight: 100;
-    text-transform: uppercase;
+    @include headerFont(400%)
   }
 
   h2 {
@@ -107,6 +104,10 @@ header {
 
   nav {
     visibility: hidden
+  }
+
+  header h1 {
+    @include headerFont(200%)
   }
 
 

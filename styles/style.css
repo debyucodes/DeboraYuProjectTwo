@@ -483,7 +483,63 @@ p {
 
 @media (max-width: 380px) {
   body {
-    background: green;
+    overflow-x: hidden;
+  }
+  header img {
+    display: none;
+  }
+  .discover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discover .imageText {
+    margin: -400px 0 50px 0;
+    width: 100%;
+  }
+  .containerThree,
+  .containerFour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .containerThreeLeft,
+  .containerThreeRight,
+  .containerFourLeft,
+  .containerFourRight {
+    width: 100%;
+  }
+  .containerFive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .containerFive .containerFiveLeft,
+  .containerFive .containerFiveRight {
+    margin: 0;
+  }
+  .containerFive .imageText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containerFive .imageText p {
+    text-align: center;
+    width: 100%;
+  }
+  .containerFiveRight .button {
+    margin-left: 115px;
+  }
+  .footerText {
+    margin: 0;
+  }
+  .homeFooter .footerText p {
+    padding: 0;
   }
 }
 
@@ -894,8 +950,8 @@ header {
 }
 
 header h1 {
-  font-family: "Kumar One Outline", cursive;
   font-size: 400%;
+  font-family: "Kumar One Outline", cursive;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -949,6 +1005,12 @@ header h2 {
   }
   nav {
     visibility: hidden;
+  }
+  header h1 {
+    font-size: 200%;
+    font-family: "Kumar One Outline", cursive;
+    font-weight: 100;
+    text-transform: uppercase;
   }
 }
 
