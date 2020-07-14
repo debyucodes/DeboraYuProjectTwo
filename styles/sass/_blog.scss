@@ -29,6 +29,16 @@
     img {
       box-shadow: 15px 15px 0 0 $yellow;
     }
+
+    h4 {
+      text-transform: capitalize;
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    span {
+      font-weight: 900;
+    }
   }
 
   aside {
@@ -61,9 +71,6 @@
   width: 60%;
   padding: 50px 0 0 160px;
 
-  // h3 {
-  //   @include primaryFont
-  // }
 
   .commentOne,
   .commentTwo {
