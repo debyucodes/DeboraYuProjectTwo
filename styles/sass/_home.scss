@@ -1,5 +1,11 @@
-// SECTION ONE 
-.containerOne {
+// HERO
+.homeHero ul li:first-child {
+  text-decoration: $yellow underline;
+  text-decoration-thickness: 3px;
+}
+
+// DISCOVER 
+.discover {
   margin: 200px 0;
   display: flex;
   justify-content: space-between;
@@ -15,19 +21,14 @@
   }
 }
 
-.homeHero ul li:first-child {
-  text-decoration: $yellow underline;
-  text-decoration-thickness: 3px;
-}
-
 
 // SECTION TWO
-.containerTwo {
+.gallery {
   background-color: $ice;
   padding: 70px 0;
 }
 
-.containerTwo .wrapper {
+.gallery .wrapper {
   display: flex;
 
   img:first-child,
