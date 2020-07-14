@@ -2,6 +2,8 @@
 // RESPONSIVE
 // ------------
 
+// FIRST BREAK POINT
+
 @media (max-width: 937px) {
   .blogHero {
     background-color: $white;
@@ -36,4 +38,54 @@
     }   
   }
 
+}
+
+// MOBILE
+
+@media (max-width: 380px) {
+
+  .blogContainer {
+    margin-top: -300px;
+    overflow-x: hidden;
+
+    article,
+    aside {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      margin-bottom: 50px;
+    }
+
+    article {
+      box-shadow: none;
+
+      h2,
+      h4,
+      p  {
+        padding: 0 20px;
+      }
+
+    }
+  }
+
+
+  .blogFooter {
+    overflow-x: hidden;
+    padding: 0 20px;
+
+    form {
+      width: 100%;
+      margin: 0;
+
+      .formInput {
+        width: 100%;
+      }
+    }
+
+    .nameEmail {
+      flex-direction: column;
+    }
+  }
 }

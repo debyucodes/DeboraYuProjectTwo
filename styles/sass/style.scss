@@ -7,14 +7,18 @@
 
 // PAGE SPECIFICS
 @import 'home';
+@import 'homeResponsive';
+
 @import 'blog';
+@import 'blogResponsive';
+
 @import 'contact';
+@import 'contactResponsive';
 
 // SECTION
 @import 'header';
 @import 'footer';
 
-// MOBILE
-@import 'homeResponsive';
-@import 'blogResponsive';
-@import 'contactResponsive';
+
+
+

@@ -5,13 +5,17 @@
 // TABLET
 @media (max-width: 1045px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
   .footerContainer {
     flex-direction: column;
     align-items: center;
 
     form {
       width: 100%;
-      margin: -250px 0 200px 0;
+      margin: -300px 0 200px 0;
     }
   }
 
@@ -26,4 +30,29 @@
     justify-content: space-evenly;
 
   }
+}
+
+// MOBILE
+@media (max-width: 380px) {
+
+  .contactHero h2 {
+    @include primaryFont(10px);
+  }
+
+  .footerContainer form {
+    padding: 20px;
+
+    .nameEmail {
+      flex-direction: column;
+
+        .formInput {
+          width: 100%;
+        }
+    }
+  }
+
+  .info ul {
+    margin: 0 auto;
+  }
+
 }
