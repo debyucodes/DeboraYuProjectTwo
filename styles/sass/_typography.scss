@@ -6,3 +6,20 @@ a {
   text-transform: uppercase;
   color: $black;
 }
+
+h2 {
+  @include primaryFont(180%)
+}
+
+h3 {
+  @include primaryFont (130%)
+}
+
+h4 {
+  @include secondaryFont (110%);
+  font-weight: 600;
+}
+
+p {
+  @include secondaryFont(100%)
+}

@@ -4,7 +4,10 @@
   background-color: $ice;
 }
 
-
+.blogHero ul li:nth-child(3) {
+  text-decoration: $yellow underline;
+  text-decoration-thickness: 3px;
+}
 
 .blogContainer {
   display: flex;
@@ -14,7 +17,7 @@
     background-color: $white;
     width: 60%;
     box-shadow: 15px 15px 0 0 $yellow;
-    margin-top: -350px;
+    margin-top: -300px;
 
 
     h2,
@@ -33,12 +36,23 @@
     background-color: $yellow;
     margin-top: -100px;
     padding: 10px;
-    height: 90vh;
-
+    align-items: flex-start;
+    height: 50%;
+    
     img {
       position: relative;
       bottom: 20px;
       left: 10px;
+      }
+    
+    h3,
+    p {
+      padding-left: 15px;
+    }
+
+    p,
+    li {
+      @include secondaryFont(110%);
     }
   }
 }
@@ -47,14 +61,31 @@
   width: 60%;
   padding: 50px 0 0 160px;
 
+  // h3 {
+  //   @include primaryFont
+  // }
+
   .commentOne,
   .commentTwo {
     display: flex;
+    
+    p {
+      font-size: 100%;
+      line-height: 25px;
+    }
   }
 
   img {
     width: 100px;
     height: 100px;
+  }
+
+  .commentText {
+    padding-left: 40px;
+  }
+
+  h4 {
+    margin: 0;
   }
 }
 
@@ -80,7 +111,6 @@
 
     input {
       width: 100%;
-      // margin: 20px 10px;
       padding: 50px 0px 20px 10px;
       background: $ice;
       border: none;
@@ -94,18 +124,20 @@
       background: $ice;
       border: 2px solid $evergreen;
       padding: 20px;
+      resize: none;
     }
 
     ::placeholder {
       text-transform: uppercase;
-      margin: 10px;
-      padding: 20px;
       font-family: $secondary;
     }
 
     .button {
       width: 100%;
       text-transform: uppercase;
+      padding: 10px 0;
+      border: none;
+      margin-top: 30px;
     }
 
   }

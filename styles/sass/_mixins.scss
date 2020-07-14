@@ -1,0 +1,15 @@
+@mixin primaryFont($sizeValue) {
+  font-size: $sizeValue;
+  font-family: $primary;
+  color: $black;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin secondaryFont($sizeValue) {
+  font-size: $sizeValue;
+  font-family: $secondary;
+  color: $black;
+  font-weight: 200;
+  line-height: 32px;
+}

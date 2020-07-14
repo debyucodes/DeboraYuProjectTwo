@@ -249,7 +249,7 @@ img {
 
 .button {
   background-color: #065635;
-  padding: 5px 20px;
+  padding: 8px 20px;
   text-decoration: none;
   color: #F5F5F5;
   font-family: "Kumar One", cursive;
@@ -262,6 +262,39 @@ h4,
 a {
   text-transform: uppercase;
   color: #151514;
+}
+
+h2 {
+  font-size: 180%;
+  font-family: "Kumar One", cursive;
+  color: #151514;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 130%;
+  font-family: "Kumar One", cursive;
+  color: #151514;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 110%;
+  font-family: "Lato", sans-serif;
+  color: #151514;
+  font-weight: 200;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  color: #151514;
+  font-weight: 200;
+  line-height: 32px;
 }
 
 .containerOne {
@@ -283,6 +316,12 @@ a {
   width: 300px;
   -webkit-box-shadow: -15px 15px 0 0 #F8FB05;
           box-shadow: -15px 15px 0 0 #F8FB05;
+}
+
+.homeHero ul li:first-child {
+  -webkit-text-decoration: #F8FB05 underline;
+          text-decoration: #F8FB05 underline;
+  text-decoration-thickness: 3px;
 }
 
 .containerTwo {
@@ -431,6 +470,12 @@ a {
   background-color: #E0FDDF;
 }
 
+.blogHero ul li:nth-child(3) {
+  -webkit-text-decoration: #F8FB05 underline;
+          text-decoration: #F8FB05 underline;
+  text-decoration-thickness: 3px;
+}
+
 .blogContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,7 +490,7 @@ a {
   width: 60%;
   -webkit-box-shadow: 15px 15px 0 0 #F8FB05;
           box-shadow: 15px 15px 0 0 #F8FB05;
-  margin-top: -350px;
+  margin-top: -300px;
 }
 
 .blogContainer article h2,
@@ -464,13 +509,30 @@ a {
   background-color: #F8FB05;
   margin-top: -100px;
   padding: 10px;
-  height: 90vh;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 50%;
 }
 
 .blogContainer aside img {
   position: relative;
   bottom: 20px;
   left: 10px;
+}
+
+.blogContainer aside h3,
+.blogContainer aside p {
+  padding-left: 15px;
+}
+
+.blogContainer aside p,
+.blogContainer aside li {
+  font-size: 110%;
+  font-family: "Lato", sans-serif;
+  color: #151514;
+  font-weight: 200;
+  line-height: 32px;
 }
 
 .commentSection {
@@ -485,9 +547,23 @@ a {
   display: flex;
 }
 
+.commentSection .commentOne p,
+.commentSection .commentTwo p {
+  font-size: 100%;
+  line-height: 25px;
+}
+
 .commentSection img {
   width: 100px;
   height: 100px;
+}
+
+.commentSection .commentText {
+  padding-left: 40px;
+}
+
+.commentSection h4 {
+  margin: 0;
 }
 
 .blogFooter {
@@ -530,39 +606,41 @@ a {
   background: #E0FDDF;
   border: 2px solid #065635;
   padding: 20px;
+  resize: none;
 }
 
 .blogFooter form ::-webkit-input-placeholder {
   text-transform: uppercase;
-  margin: 10px;
-  padding: 20px;
   font-family: "Lato", sans-serif;
 }
 
 .blogFooter form :-ms-input-placeholder {
   text-transform: uppercase;
-  margin: 10px;
-  padding: 20px;
   font-family: "Lato", sans-serif;
 }
 
 .blogFooter form ::-ms-input-placeholder {
   text-transform: uppercase;
-  margin: 10px;
-  padding: 20px;
   font-family: "Lato", sans-serif;
 }
 
 .blogFooter form ::placeholder {
   text-transform: uppercase;
-  margin: 10px;
-  padding: 20px;
   font-family: "Lato", sans-serif;
 }
 
 .blogFooter form .button {
   width: 100%;
   text-transform: uppercase;
+  padding: 10px 0;
+  border: none;
+  margin-top: 30px;
+}
+
+.contactHero ul li:last-child {
+  -webkit-text-decoration: #F8FB05 underline;
+          text-decoration: #F8FB05 underline;
+  text-decoration-thickness: 3px;
 }
 
 .contactFooter {
@@ -579,63 +657,77 @@ a {
 }
 
 .footerContainer form {
-  width: 60%;
+  width: 70%;
   text-align: center;
   padding: 50px;
-  max-width: 820px;
+  max-width: 900px;
   -webkit-box-shadow: 15px 15px 0 0 #F8FB05;
           box-shadow: 15px 15px 0 0 #F8FB05;
   margin-top: -300px;
   margin-bottom: 100px;
-  background: #F5F5F5;
+  margin-left: -150px;
+  background: white;
 }
 
 .footerContainer form .nameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footerContainer form .formInput {
+  width: 47%;
+  margin-bottom: 40px;
 }
 
 .footerContainer form input {
-  width: 50%;
-  margin: 0 10px;
+  width: 100%;
+  padding: 20px 0px 20px 10px;
+  border: none;
+  border-bottom: 2px solid #065635;
 }
 
 .footerContainer form textarea {
   width: 100%;
   height: auto;
-  margin: 20px 10px;
+  margin: 20px 0;
+  padding: 20px;
+  resize: none;
+  border: 2px solid #065635;
 }
 
 .footerContainer form ::-webkit-input-placeholder {
   text-transform: uppercase;
-  margin: 10px;
   font-family: "Lato", sans-serif;
 }
 
 .footerContainer form :-ms-input-placeholder {
   text-transform: uppercase;
-  margin: 10px;
   font-family: "Lato", sans-serif;
 }
 
 .footerContainer form ::-ms-input-placeholder {
   text-transform: uppercase;
-  margin: 10px;
   font-family: "Lato", sans-serif;
 }
 
 .footerContainer form ::placeholder {
   text-transform: uppercase;
-  margin: 10px;
   font-family: "Lato", sans-serif;
 }
 
 .footerContainer form .button {
   width: 100%;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border: none;
+}
+
+.info {
+  margin-top: -120px;
 }
 
 .info ul {
@@ -646,11 +738,18 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding: 0;
 }
 
 .info ul a {
   text-decoration: none;
   padding-right: 20px;
+  color: #065635;
+  font-size: 20px;
+}
+
+.info p {
+  line-height: 10px;
 }
 
 nav {
@@ -668,6 +767,12 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding-bottom: 0;
+}
+
+nav ul li {
+  padding-bottom: 0;
+  text-decoration: none;
 }
 
 nav ul a {
@@ -734,6 +839,7 @@ header h2 {
 
 .copyright {
   background-color: #151514;
+  font-family: "Lato", sans-serif;
   color: #F5F5F5;
   text-align: center;
   padding: 15px 0;
